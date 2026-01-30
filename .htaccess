@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Evitar listar directorios
+Options -Indexes
+
+# Bloquear acceso directo a carpetas sensibles
+RewriteRule ^(config|controllers|models)/ - [F,L]
+
+# Permitir solo index.php como punto de entrada
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
