@@ -39,3 +39,4 @@ The business logic is separated into models, controllers, and views, allowing fo
 Demonstrate practical knowledge of backend development with PHP, relational database management, and application of the MVC pattern in a real-world environment.
 
 
+![Vista previa del proyecto](image/home.png)
